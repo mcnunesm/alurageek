@@ -1,0 +1,23 @@
+.nav__logo {
+    justify-content: flex-start;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding: 5rem;
+}
+
+.login__titulo {
+    margin-bottom: 1.5rem;
+    color: #464646;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#login__botao {
+    max-width: 423px;
+    width: 423px;
+}

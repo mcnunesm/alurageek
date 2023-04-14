@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <title>AluraGeek</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo-pesquisa">
+                <img src="../img/logo.png" alt="Logo AluraGeek" class="nav__logo">
+
+                <div class="nav__pesquisa">
+                    <input type="text" class="nav__pesquisa-input" placeholder="O que deseja encontrar?">
+                    <a href="#"><img src="../img/search.png" alt="Lupa de pesquisa" class="nav__pesquisa-lupa"></a>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="login">
+            <h3 class="login__titulo">Iniciar Sessão</h3>
+            <input type="email" class="login__email input__form" placeholder="Escreva seu e-mail">
+            <input type="password" class="login__senha input__form" placeholder="Escreva sua senha">
+            <button class="login__botao botao-azul" id="login__botao">Entrar</button>
+        </section>
+
+        <section class="contato">
+            <img src="../img/logo.png" alt="" class="contato__logo">
+            <ul class="contato__sobre">
+                <li class="contato__sobre-link">Quem somos nós</li>
+                <li class="contato__sobre-link">Política de privacidade</li>
+                <li class="contato__sobre-link">Programa fidelidade</li>
+                <li class="contato__sobre-link">Nossas lojas</li>
+                <li class="contato__sobre-link">Quero ser franqueado</li>
+                <li class="contato__sobre-link">Anuncie aqui</li>
+            </ul>
+            <div class="form-container">
+                <p class="contato__titulo">Fale conosco</p>
+                <form action="" class="contato__form" data-form>
+                    <input class="input__form" type="text" name="nome" id="nome" data-nome placeholder="Nome">
+                    <textarea class="input__form" name="msg" id="msg" cols="30" rows="10" placeholder="Escreva sua mensagem" data-msg ></textarea>
+                    <button type="submit" class="contato__botao-envia botao-azul" data-submit>Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="redes-sociais">
+            <p class="redes-sociais__texto">Desenvolvido por Maria Clara Nunes</p>
+            <div class="redes-sociais-container">
+                <a href="https://github.com/mcnunesm" target="_blank"><img src="../img/github-icon.png"
+                        alt="Ícone do GitHub" title="@mcnunesm"></a>
+                <a href="https://www.linkedin.com/in/marianunesm/" target="_blank"><img src="../img/linkedin-icon.png"
+                        alt="Ícone do Linkedin" title="Maria Clara Nunes"></a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

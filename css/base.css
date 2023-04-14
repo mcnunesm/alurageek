@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+} 
+
+input, button, textarea {
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.nav {
+    padding: 2rem 9.5rem;
+    gap: 1rem;
+}
+
+.nav__logo-pesquisa {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav__pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    
+}
+
+.nav__pesquisa:hover {
+    border: 1px groove #2A7AE4;
+}
+
+.nav__pesquisa-input {
+    background-color: transparent;
+    padding: 1rem;
+    width: 25rem;
+}
+
+.nav__pesquisa-lupa {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.nav__login {
+    width: 10.375rem;
+    background-color: #FFFFFF;
+    border: solid 1px #2A7AE4;
+    color: #2A7AE4;
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 0.7rem;
+}
+
+.botao-azul {
+    background-color: #2A7AE4;
+    font-weight: 400;
+    max-width: 11.5rem;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.contato {
+    background-color: #EAF2FD;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5rem 9.5rem;
+}
+
+.contato__sobre {
+    list-style: none;
+}
+
+.contato__sobre-link {
+    margin-bottom: 1.5rem;
+}
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+}
+
+.contato__titulo {
+    font-weight: 700;
+    color: #464646;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input__form {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 423px;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.redes-sociais {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 500;
+}
+
+.redes-sociais__texto {
+    padding-bottom: 0.5rem;
+}
+
+.redes-sociais a {
+    color: black;
+}
+
+.redes-sociais-container img{
+    width: 32px;
+    margin-left: 0.4rem;
+}
