@@ -81,15 +81,16 @@ a:link, a:visited {
     font-size: 1.375rem;
 }
 
-.banner__botao {
+.botao-azul {
     background-color: #2A7AE4;
-    font-weight: 600;
-    width: 7.4rem;
+    font-weight: 400;
+    width: 11rem;
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 0.875rem;
-    padding: 0.6rem;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
 }
 
 .produtos {
@@ -120,6 +121,79 @@ a:link, a:visited {
     font-weight: 700;
     font-size: 1rem;
 }
+
+.produto-box a {
+    color: #2A7AE4;
+    font-weight: 700;
+
+}
+
+.contato {
+    background-color: #EAF2FD;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 5rem 9.5rem;
+    margin-top: 4rem;
+}
+
+.contato__sobre {
+    list-style: none;
+}
+
+.contato__sobre-link {
+    margin-bottom: 1.5rem;
+}
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+}
+
+.contato__titulo {
+    font-weight: 700;
+    color: #464646;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#nome {
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+
+}
+
+#msg {
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    resize: none;
+}
+
+.redes-sociais {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 500;
+}
+
+.redes-sociais__texto {
+    padding-bottom: 0.5rem;
+}
+
+.redes-sociais a {
+    color: black;
+}
+
+.redes-sociais-container img{
+    width: 32px;
+    margin-left: 0.4rem;
+}
+
+
 
 
 

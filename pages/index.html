@@ -24,7 +24,7 @@
                     <input type="text" class="nav__pesquisa-input" placeholder="O que deseja encontrar?">
                     <a href="#"><img src="../img/search.png" alt="Lupa de pesquisa" class="nav__pesquisa-lupa"></a>
                 </div>
-                
+
 
             </div>
             <a href="#" class="nav__login">Login</a>
@@ -37,14 +37,15 @@
             <h1 class="banner__titulo">Abril Promocional</h1>
             <p class="banner__texto">Produtos selecionados com 33% de desconto</p>
 
-            <a href="#" class="banner__botao">Ver consoles</a>
+            <a href="#" class="banner__botao botao-azul">Ver consoles</a>
             <!-- <button class="banner__botao"><a href="#">Ver consoles</a></button> -->
         </section>
 
         <section class="produtos">
             <div class="produtos__cabecalho">
                 <h3 class="produtos__titulo">Star Wars</h3>
-                <a href="#" class="produtos__todos">Ver tudo <img src="../img/seta.png" alt="icone de uma seta" class="produtos__todos-img"></a>
+                <a href="#" class="produtos__todos">Ver tudo <img src="../img/seta.png" alt="icone de uma seta"
+                        class="produtos__todos-img"></a>
             </div>
             <article class="produtos__container">
 
@@ -75,31 +76,32 @@
                     <p>R$60,00</p>
                     <a href="#">Ver produto</a>
                 </div>
-                
+
                 <div class="produto-box">
                     <img src="../img/starWars5.png" alt="" class="produtos-img">
                     <p>Produto XYZ</p>
                     <p>R$60,00</p>
                     <a href="#">Ver produto</a>
                 </div>
-                
+
                 <div class="produto-box">
                     <img src="../img/starWars6.png" alt="" class="produtos-img">
                     <p>Produto XYZ</p>
                     <p>R$60,00</p>
                     <a href="#">Ver produto</a>
                 </div>
-                
+
             </article>
 
             <div class="produtos__cabecalho">
-                <h3 class="produtos__titulo">Star Wars</h3>
-                <a href="#">Ver tudo</a>
+                <h3 class="produtos__titulo">Consoles</h3>
+                <a href="#" class="produtos__todos">Ver tudo <img src="../img/seta.png" alt="icone de uma seta"
+                        class="produtos__todos-img"></a>
             </div>
             <article class="produtos__container">
 
                 <div class="produto-box">
-                    
+
                     <img src="../img/starWars1.png" alt="" class="produtos-img">
                     <p>Produto XYZ</p>
                     <p>R$60,00</p>
@@ -126,32 +128,33 @@
                     <p>R$60,00</p>
                     <a href="#">Ver produto</a>
                 </div>
-                
+
                 <div class="produto-box">
                     <img src="../img/starWars5.png" alt="" class="produtos-img">
                     <p>Produto XYZ</p>
                     <p>R$60,00</p>
                     <a href="#">Ver produto</a>
                 </div>
-                
+
                 <div class="produto-box">
                     <img src="../img/starWars6.png" alt="" class="produtos-img">
                     <p>Produto XYZ</p>
                     <p>R$60,00</p>
                     <a href="#">Ver produto</a>
                 </div>
-                
+
             </article>
 
             <div class="produtos__cabecalho">
-                <h3 class="produtos__titulo">Star Wars</h3>
-                <a href="#">Ver tudo</a>
+                <h3 class="produtos__titulo">Diversos</h3>
+                <a href="#" class="produtos__todos">Ver tudo <img src="../img/seta.png" alt="icone de uma seta"
+                        class="produtos__todos-img"></a>
             </div>
 
             <article class="produtos__container">
 
                 <div class="produto-box">
-                    
+
                     <img src="../img/starWars1.png" alt="" class="produtos-img">
                     <p>Produto XYZ</p>
                     <p>R$60,00</p>
@@ -178,21 +181,21 @@
                     <p>R$60,00</p>
                     <a href="#">Ver produto</a>
                 </div>
-                
+
                 <div class="produto-box">
                     <img src="../img/starWars5.png" alt="" class="produtos-img">
                     <p>Produto XYZ</p>
                     <p>R$60,00</p>
                     <a href="#">Ver produto</a>
                 </div>
-                
+
                 <div class="produto-box">
                     <img src="../img/starWars6.png" alt="" class="produtos-img">
                     <p>Produto XYZ</p>
                     <p>R$60,00</p>
                     <a href="#">Ver produto</a>
                 </div>
-                
+
             </article>
         </section>
 
@@ -206,18 +209,28 @@
                 <li class="contato__sobre-link">Quero ser franqueado</li>
                 <li class="contato__sobre-link">Anuncie aqui</li>
             </ul>
-            <p class="contato__titulo">Fale conosco</p>
-            <form action="" class="contato__form" data-form>
-                <input type="text" name="nome" id="nome" data-nome placeholder="Nome">
-                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreve sua mensagem" data-msg></textarea>
-                <button type="submit" class="contato__botao-enviar">Enviar mensagem</button>
-            </form>
+            <div class="form-container">
+                <p class="contato__titulo">Fale conosco</p>
+                <form action="" class="contato__form" data-form>
+                    <input type="text" name="nome" id="nome" data-nome placeholder="Nome">
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreva sua mensagem"
+                        data-msg></textarea>
+                    <button type="submit" class="contato__botao-envia botao-azul" data-submit>Enviar mensagem</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p class="rodape__texto">Desenvolvido por Maria Clara Nunes</p>
-        <p class="rodape__texto">2023</p>
+        <section class="redes-sociais">
+            <p class="redes-sociais__texto">Desenvolvido por Maria Clara Nunes</p>
+            <div class="redes-sociais-container">
+                <a href="https://github.com/mcnunesm" target="_blank"><img src="../img/github-icon.png"
+                        alt="Ícone do GitHub" title="@mcnunesm"></a>
+                <a href="https://www.linkedin.com/in/marianunesm/" target="_blank"><img src="../img/linkedin-icon.png"
+                        alt="Ícone do Linkedin" title="Maria Clara Nunes"></a>
+            </div>
+        </section>
     </footer>
 
 </body>
