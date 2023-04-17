@@ -31,7 +31,6 @@ input, button, textarea {
     align-items: center;
     background-color: #F5F5F5;
     border-radius: 20px;
-    
 }
 
 .nav__pesquisa:hover {
@@ -41,12 +40,16 @@ input, button, textarea {
 .nav__pesquisa-input {
     background-color: transparent;
     padding: 1rem;
-    width: 25rem;
+    width: 24rem;
 }
 
 .nav__pesquisa-lupa {
     padding: 0.5rem;
     margin-right: 0.5rem;
+}
+
+.lupa-img {
+    display: none;
 }
 
 .nav__login {
@@ -62,7 +65,7 @@ input, button, textarea {
 .botao-azul {
     background-color: #2A7AE4;
     font-weight: 400;
-    max-width: 11.5rem;
+    max-width: 11.1rem;
     color: #FFFFFF;
     text-align: center;
     font-size: 1rem;
@@ -73,13 +76,19 @@ input, button, textarea {
 .contato {
     background-color: #EAF2FD;
     display: flex;
+    padding: 5rem 0;
+    justify-content: space-evenly;
+}
+
+.contato__sobre-box {
+    display: flex;
     justify-content: space-between;
     align-items: start;
-    padding: 5rem 9.5rem;
 }
 
 .contato__sobre {
     list-style: none;
+    padding-left: 7rem;
 }
 
 .contato__sobre-link {
@@ -89,7 +98,6 @@ input, button, textarea {
 .contato__form {
     display: flex;
     flex-direction: column;
-    width: 560px;
 }
 
 .contato__titulo {
@@ -104,6 +112,7 @@ input, button, textarea {
     margin-bottom: 1rem;
     width: 423px;
     border-bottom: 1px solid #C8C8C8;
+    border-radius: 4px 4px 0 0;
 }
 
 .redes-sociais {
@@ -123,4 +132,78 @@ input, button, textarea {
 .redes-sociais-container img{
     width: 32px;
     margin-left: 0.4rem;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+    .nav__pesquisa-input {
+        width: 17rem;
+    }
+
+    .nav {
+        padding: 1rem 1rem;
+        gap: 2rem;
+    }
+
+    .nav__logo {
+        width: 100px;
+    }
+
+    .contato__sobre-box {
+        display: block;
+        margin-right: 5rem;
+    }
+
+    .contato__sobre {
+        padding: 2rem 0;
+    }
+
+    .botao-azul {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .contato {
+        flex-direction: column;
+    }
+
+    .contato__sobre {
+        text-align: center;
+    }
+
+    .contato__form {
+        align-items: center;
+    }
+
+    .contato__titulo {
+        margin-left: 1rem;
+    }
+
+    .input__form {
+        width: 328px;
+        max-height: 82px;
+    }
+
+    .contato__sobre-box {
+        margin: auto;
+    }
+
+    .contato__logo {
+        margin: auto;
+    }
+    
+    .nav__pesquisa {
+        display: none;
+    }
+
+    .lupa-img {
+        display: block;
+    }
+
+    .nav__logo-pesquisa {
+        display: flex;
+        justify-content: space-between;
+    }
 }

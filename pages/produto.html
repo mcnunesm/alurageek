@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/produto.css">
+    <link rel="stylesheet" href="../css/todos_produtos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
     <header>
         <nav class="nav">
             <div class="nav__logo-pesquisa">
-                <img src="../img/logo.png" alt="Logo AluraGeek" class="nav__logo">
+                <a href="./index.html"><img src="../img/logo.png" alt="Logo AluraGeek" class="nav__logo"></a>
 
                 <div class="nav__pesquisa">
                     <input type="text" class="nav__pesquisa-input" placeholder="O que deseja encontrar?">
@@ -45,32 +46,68 @@
             </div>
         </section>
 
+        <h3 class="produtos__titulo">Produtos similares</h3>
         <section class="produto__similar">
-            <h3 class="produtos__titulo">Produtos similares</h3>
             <div class="produto__similar-box">
                 <img src="../img/starWars1.png" alt="" class="produtos-img">
                 <p class="nome__produto">Produto XYZ</p>
                 <p class="valor__produto">R$60,00</p>
-                <a href="#" class="link__produto">Ver produto</a>
+                <a href="./produto.html" class="link__produto">Ver produto</a>
+            </div>
+
+            <div class="produto__similar-box">
+                <img src="../img/starWars1.png" alt="" class="produtos-img">
+                <p class="nome__produto">Produto XYZ</p>
+                <p class="valor__produto">R$60,00</p>
+                <a href="./produto.html" class="link__produto">Ver produto</a>
+            </div>
+
+            <div class="produto__similar-box">
+                <img src="../img/starWars1.png" alt="" class="produtos-img">
+                <p class="nome__produto">Produto XYZ</p>
+                <p class="valor__produto">R$60,00</p>
+                <a href="./produto.html" class="link__produto">Ver produto</a>
+            </div>
+
+            <div class="produto__similar-box">
+                <img src="../img/starWars1.png" alt="" class="produtos-img">
+                <p class="nome__produto">Produto XYZ</p>
+                <p class="valor__produto">R$60,00</p>
+                <a href="./produto.html" class="link__produto">Ver produto</a>
+            </div>
+
+            <div class="produto__similar-box">
+                <img src="../img/starWars1.png" alt="" class="produtos-img">
+                <p class="nome__produto">Produto XYZ</p>
+                <p class="valor__produto">R$60,00</p>
+                <a href="./produto.html" class="link__produto">Ver produto</a>
+            </div>
+
+            <div class="produto__similar-box">
+                <img src="../img/starWars1.png" alt="" class="produtos-img">
+                <p class="nome__produto">Produto XYZ</p>
+                <p class="valor__produto">R$60,00</p>
+                <a href="./produto.html" class="link__produto">Ver produto</a>
             </div>
         </section>
 
         <section class="contato">
-            <img src="../img/logo.png" alt="" class="contato__logo">
-            <ul class="contato__sobre">
-                <li class="contato__sobre-link">Quem somos nós</li>
-                <li class="contato__sobre-link">Política de privacidade</li>
-                <li class="contato__sobre-link">Programa fidelidade</li>
-                <li class="contato__sobre-link">Nossas lojas</li>
-                <li class="contato__sobre-link">Quero ser franqueado</li>
-                <li class="contato__sobre-link">Anuncie aqui</li>
-            </ul>
+            <div class="contato__sobre-box">
+                <img src="../img/logo.png" alt="" class="contato__logo">
+                <ul class="contato__sobre">
+                    <li class="contato__sobre-link">Quem somos nós</li>
+                    <li class="contato__sobre-link">Política de privacidade</li>
+                    <li class="contato__sobre-link">Programa fidelidade</li>
+                    <li class="contato__sobre-link">Nossas lojas</li>
+                    <li class="contato__sobre-link">Quero ser franqueado</li>
+                    <li class="contato__sobre-link">Anuncie aqui</li>
+                </ul>
+            </div>
             <div class="form-container">
                 <p class="contato__titulo">Fale conosco</p>
                 <form action="" class="contato__form" data-form>
                     <input class="input__form" type="text" name="nome" id="nome" data-nome placeholder="Nome">
-                    <textarea class="input__form" name="msg" id="msg" cols="30" rows="10"
-                        placeholder="Escreva sua mensagem" data-msg></textarea>
+                    <textarea class="input__form" name="msg" id="msg" cols="30" rows="10" placeholder="Escreva sua mensagem" data-msg ></textarea>
                     <button type="submit" class="contato__botao-envia botao-azul" data-submit>Enviar mensagem</button>
                 </form>
             </div>

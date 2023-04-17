@@ -1,10 +1,9 @@
 /* font-family: 'Raleway', sans-serif; */
-.nav_index {
+.nav__index {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 
 .banner {
     background-image: url('../img/banner.png');
@@ -15,7 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 0 0 2rem 2rem;
+    padding: 0 0 2rem 9.5rem;
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -29,6 +28,36 @@
 .banner__texto {
     font-weight: 700;
     font-size: 1.375rem;
+}
+
+
+/* TELAS MENORES */
+
+/* TABLET */
+
+@media (max-width: 768px) {
+    .banner {
+        height: 352px;
+        background-position: 30%;
+        padding: 0 0 2rem 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .banner {
+        height: 192px;
+        background-position: 30%;
+        padding: 1rem;
+    }
+
+    .banner__titulo {
+        font-size: 1.375rem;
+    }
+
+    .banner__texto {
+        font-size: 0.875rem;
+    }
 }
 
 

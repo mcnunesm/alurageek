@@ -1,3 +1,9 @@
+.nav__add-produtos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .add__produto {
     background-color: #E5E5E5;
     display: flex;
@@ -15,12 +21,51 @@
     margin-bottom: 1.5rem;
     color: #464646;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 2rem;
 }
 
 .add__produto input, textarea {
     margin-bottom: 1rem;
     padding: 1rem;
     width: 559px;
-    border-bottom: 1px solid #C8C8C8
+    border-bottom: 1px solid #C8C8C8;
+    border-radius: 4px 4px 0 0;
+}
+
+@media (max-width: 768px) {
+    .add__produto {
+        padding: 2rem;
+    }
+
+    .add__produto-titulo {
+        font-size: 1.375rem;
+    }
+
+    .add__produto input, textarea {
+        width: 704px;
+    }
+
+    #add__botao {
+        max-width: 704px;
+        width: 704px;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav {
+        gap: 0;
+    }
+
+    .add__produto {
+        padding: 1rem;
+    }
+
+    .add__produto input, textarea {
+        width: 328px;
+    }
+
+    #add__botao {
+        max-width: 328px;
+        width: 328px;
+    }
 }

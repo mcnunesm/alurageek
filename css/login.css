@@ -21,3 +21,9 @@
     max-width: 423px;
     width: 423px;
 }
+
+@media (max-width: 768px) {
+    #login__botao {
+        max-width: 109px;
+    }
+}
