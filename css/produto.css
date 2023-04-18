@@ -35,6 +35,11 @@
     color: #464646
 }
 
+.produto__texto {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 .produtos__titulo {
     padding: 4rem 9.5rem 1rem 9.5rem;
     color: #464646;
@@ -54,7 +59,81 @@
     margin-bottom: 4rem;
 }
 
-.produto__similar-box a{
+.produto__similar-box a {
     color: #2A7AE4;
     font-weight: 700;
+}
+
+/* TELAS MENORES */
+
+/*TABLET*/ 
+
+@media (max-width: 768px) {
+    .produto {
+        padding: 2rem;
+    }
+
+    .produto__descricao-box {
+        padding-right: 0;
+    }
+
+    .produto__img {
+        width: 254px;
+    }
+
+    .produto__titulo,
+    .produtos__titulo {
+        font-size: 1.375rem;
+    }
+
+    .produto__texto {
+        font-size: 0.875rem;
+    }
+
+    .produto__similar {
+        padding: 0 2rem;
+    }
+
+    .produto__similar {
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    .produto__similar-box:nth-child(n+5) {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .produto {
+        padding: 0;
+    }
+
+    .produto-box {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .produto__img {
+        width: 100%;
+    }
+
+    .produto__descricao-box {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .produtos__titulo {
+        padding: 1rem;
+    }
+
+    .produto__similar {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
 }

@@ -164,7 +164,7 @@ input, button, textarea {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
     .contato {
         flex-direction: column;
     }
