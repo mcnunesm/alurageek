@@ -33,14 +33,16 @@
     </header>
 
     <main>
-        <section class="add__produto">
-            <h3 class="add__produto-titulo">Adicionar novo produto</h3>
-            <input type="url" name="url" id="url-img" class="add__produto-img" placeholder="URL da imagem">
-            <input type="text" name="categoria" id="categoria" class="add__produto-categoria" placeholder="Categoria">
-            <input type="text" name="nome-produto" id="nome-produto" class="add__produto-nome" placeholder="Nome do produto">
-            <input type="text" name="valor" id="valor-produto" class="add__produto-valor" placeholder="Preço do produto">
-            <textarea name="descricao" id="descricao" cols="30" rows="5" class="add__produto-descricao" placeholder="Descrição do produto"></textarea>
-            <button class="add__botao botao-azul" id="add__botao">Adicionar produto</button>
+        <section class="add__produto-container">
+            <form action="" class="add__produto">
+                <h3 class="add__produto-titulo">Adicionar novo produto</h3>
+                <input type="url" name="URL da imagem" id="url-img" class="add__produto-img" placeholder="URL da imagem" required data-imagem>
+                <input type="text" name="categoria" id="categoria" class="add__produto-categoria" placeholder="Categoria" required>
+                <input type="text" name="nome do produto" id="nome-produto" class="add__produto-nome" placeholder="Nome do produto" required data-nomeproduto>
+                <input type="text" name="preço do produto" id="valor-produto" class="add__produto-valor" placeholder="Preço do produto" data-preco required>
+                <textarea name="descrição do produto" id="descricao" cols="30" rows="5" class="add__produto-descricao" placeholder="Descrição do produto" required data-descricao></textarea>
+                <button type="submit" class="add__botao botao-azul" id="add__botao" data-adicionar>Adicionar produto</button>
+            </form>
         </section>
 
         <section class="contato">
@@ -58,8 +60,10 @@
             <div class="form-container">
                 <p class="contato__titulo">Fale conosco</p>
                 <form action="" class="contato__form" data-form>
-                    <input class="input__form" type="text" name="nome" id="nome" data-nome placeholder="Nome">
-                    <textarea class="input__form" name="msg" id="msg" cols="30" rows="10" placeholder="Escreva sua mensagem" data-msg ></textarea>
+                    <input class="input__form" type="text" name="nome" id="nome" data-nome
+                        placeholder="Digite seu nome aqui" required>
+                    <textarea class="input__form" name="msg" id="msg" cols="30" rows="10"
+                        placeholder="Escreva sua mensagem" data-msg required></textarea>
                     <button type="submit" class="contato__botao-envia botao-azul" data-submit>Enviar mensagem</button>
                 </form>
             </div>
@@ -77,7 +81,7 @@
             </div>
         </section>
     </footer>
-
+    <script src="../js/validaVazio.js"></script>
 </body>
 
 </html>

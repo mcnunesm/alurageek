@@ -164,6 +164,12 @@ input, button, textarea {
     }
 }
 
+#error-message {
+    padding: 1rem;
+    color: red;
+    font-size: 0.875rem;
+}
+
 @media (max-width: 375px) {
     .contato {
         flex-direction: column;
