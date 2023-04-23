@@ -36,7 +36,7 @@
     <main>
         <section class="login">
             <h3 class="login__titulo">Iniciar Sessão</h3>
-            <form action="./adicionar_produto.html" class="login-form">
+            <form class="login-form">
                 <input type="email" name="email" class="login__email input__form" placeholder="Escreva seu e-mail" data-email required>
                 <input type="password" class="login__senha input__form" name="senha" placeholder="Escreva sua senha" data-senha required>
                 <button type="submit" class="login__botao botao-azul" id="login__botao" data-entrar>Entrar</button>
@@ -61,7 +61,7 @@
                 <form action="" class="contato__form" data-form>
                     <input class="input__form" type="text" name="nome" id="nome" data-nome
                         placeholder="Digite seu nome aqui" required>
-                    <textarea class="input__form" name="msg" id="msg" cols="30" rows="10"
+                    <textarea class="input__form" name="mensagem" id="msg" cols="30" rows="10"
                         placeholder="Escreva sua mensagem" data-msg required></textarea>
                     <button type="submit" class="contato__botao-envia botao-azul" data-submit>Enviar mensagem</button>
                 </form>
@@ -80,9 +80,8 @@
             </div>
         </section>
     </footer>
-    <script src="../js/validaVazio.js"></script>
-    <script src="../js/validaLogin.js"></script>
-
+    <script type="module" src="../js/validaContato.js"></script>
+    <script type="module" src="../js/validaEmail.js"></script>
 </body>
 
 </html>

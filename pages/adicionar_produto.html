@@ -36,7 +36,8 @@
         <section class="add__produto-container">
             <form action="" class="add__produto">
                 <h3 class="add__produto-titulo">Adicionar novo produto</h3>
-                <input type="url" name="URL da imagem" id="url-img" class="add__produto-img" placeholder="URL da imagem" required data-imagem>
+                <!-- <label for="imagem" class="add__produto-botao"><button>Escolher arquivo</button></label> -->
+                <input type="file" name="imagem" id="url-img" class="add__produto-img" placeholder="URL da imagem" required data-imagem accept="image/png, image/jpeg">
                 <input type="text" name="categoria" id="categoria" class="add__produto-categoria" placeholder="Categoria" required>
                 <input type="text" name="nome do produto" id="nome-produto" class="add__produto-nome" placeholder="Nome do produto" required data-nomeproduto>
                 <input type="text" name="preço do produto" id="valor-produto" class="add__produto-valor" placeholder="Preço do produto" data-preco required>
@@ -62,7 +63,7 @@
                 <form action="" class="contato__form" data-form>
                     <input class="input__form" type="text" name="nome" id="nome" data-nome
                         placeholder="Digite seu nome aqui" required>
-                    <textarea class="input__form" name="msg" id="msg" cols="30" rows="10"
+                    <textarea class="input__form" name="mensagem" id="msg" cols="30" rows="10"
                         placeholder="Escreva sua mensagem" data-msg required></textarea>
                     <button type="submit" class="contato__botao-envia botao-azul" data-submit>Enviar mensagem</button>
                 </form>
@@ -81,7 +82,8 @@
             </div>
         </section>
     </footer>
-    <script src="../js/validaVazio.js"></script>
+    <script type="module" src="../js/validaContato.js"></script>
+    <script type="module" src="../js/validaProduto.js"></script>
 </body>
 
 </html>
