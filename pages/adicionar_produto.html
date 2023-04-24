@@ -34,7 +34,7 @@
 
     <main>
         <section class="add__produto-container">
-            <form action="" class="add__produto">
+            <form action="#" class="add__produto">
                 <h3 class="add__produto-titulo">Adicionar novo produto</h3>
                 <!-- <label for="imagem" class="add__produto-botao"><button>Escolher arquivo</button></label> -->
                 <input type="file" name="imagem" id="url-img" class="add__produto-img" placeholder="URL da imagem" required data-imagem accept="image/png, image/jpeg">
@@ -43,6 +43,7 @@
                 <input type="text" name="preço do produto" id="valor-produto" class="add__produto-valor" placeholder="Preço do produto" data-preco required>
                 <textarea name="descrição do produto" id="descricao" cols="30" rows="5" class="add__produto-descricao" placeholder="Descrição do produto" required data-descricao></textarea>
                 <button type="submit" class="add__botao botao-azul" id="add__botao" data-adicionar>Adicionar produto</button>
+                <div id="error-message"></div>
             </form>
         </section>
 

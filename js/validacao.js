@@ -1,6 +1,3 @@
-
-
-
 export function verificaVazio(field, num) {
     field.addEventListener('input', () => {
         field.setCustomValidity('')
@@ -37,20 +34,19 @@ export function verificaEmail() {
 
 export function login() {
     const entrarBtn = document.querySelector('[data-entrar');
-    const errorDiv = document.querySelector('#error-message'); 
-  
+    const errorDiv = document.querySelector('#error-message');
+
     entrarBtn.addEventListener('click', (event) => {
-      event.preventDefault(); 
+        event.preventDefault();
 
-      const emailLogin = document.querySelector('[data-email]').value;
-      const senhaLogin = document.querySelector('[data-senha]').value;
-      if (emailLogin === 'admin@example.com' && senhaLogin === 'admin123') {
+        const emailLogin = document.querySelector('[data-email]').value;
+        const senhaLogin = document.querySelector('[data-senha]').value;
+        if (emailLogin === 'admin@example.com' && senhaLogin === 'admin123') {
 
-        window.location.href = '/pages/adicionar_produto.html';
-      } else {
+            window.location.href = '/pages/adicionar_produto.html';
+        } else {
 
-        errorDiv.textContent = 'E-mail ou senha inválidos.';
-      }
+            errorDiv.textContent = 'E-mail ou senha inválidos.';
+        }
     });
-  }
-
+}
